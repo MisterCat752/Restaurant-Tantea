@@ -1,0 +1,560 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Cormorant+Infant:wght@400;700&family=Josefin+Sans&display=swap"
+      rel="stylesheet" />
+    <link rel="stylesheet" href="./css/style.css" />
+    <title>TasteEat</title>
+  </head>
+  <body>
+    <!-- header -->
+    <header class="header">
+  <div class="container">
+    <div class="header_top">
+      <a href="tel:123456789" class="header_link">Call - 123 456 789</a>
+      <img src="./img/IMAGE.png" alt="" class="header_img" />
+      <a href="#" class="res_btn">Reservation</a>
+    </div>
+    <!-- nav -->
+    <nav class="nav">
+      <div class="nav_wrapper">
+        <ul class="nav_menu">
+          <li class="nav_item"><a href="" class="nav_link active"> Home</a></li>
+          <li class="nav_item"><a href="" class="nav_link">About Us</a></li>
+          <li class="nav_item"><a href="" class="nav_link">Our Menu</a></li>
+          <li class="nav_item"><a href="" class="nav_link">Pages</a></li>
+          <li class="nav_item"><a href="" class="nav_link">Blog</a></li>
+          <li class="nav_item"><a href="" class="nav_link">Contact Us</a></li>
+        </ul>
+        <img src="./img/inst.png" alt="group" class="group_img" />
+      </div>
+    </nav>
+
+    <!-- Welcome to restaurant -->
+    <div class="welcome_wrapper">
+      <div class="welcome_block">
+        <h1 class="welcome_text">Welcome to <br />Restaurant</h1>
+        <p class="welcome_subtext">
+          The people, food and the prime locations make the perfect place good
+          friends & family to come together and have great time.
+        </p>
+        <a href="#!" class="welcome_btn">View Menu</a>
+      </div>
+      <div class="welcome_block">
+        <img src="./img/welcome.png" alt="" />
+      </div>
+    </div>
+  </div>
+</header>
+
+
+    <!-- main -->
+    <main class="main">
+  <div class="container">
+    <!-- about header -->
+    <div class="about_wrapper">
+      <div class="about_item">
+        <div class="about_img">
+          <svg
+            width="52"
+            height="52"
+            viewBox="0 0 52 52"
+            fill="none"
+            xmlns="http://www.w3.org/2000/svg"
+            xmlns:xlink="http://www.w3.org/1999/xlink">
+            <g clip-path="url(#clip0_2_112)">
+              <path d="M52 0H0V52H52V0Z" fill="url(#pattern0)" />
+            </g>
+            <defs>
+              <pattern
+                id="pattern0"
+                patternContentUnits="objectBoundingBox"
+                width="1"
+                height="1">
+                <use xlink:href="#image0_2_112" transform="scale(0.01)" />
+              </pattern>
+              <clipPath id="clip0_2_112">
+                <rect width="52" height="52" fill="white" />
+              </clipPath>
+              <image
+                id="image0_2_112"
+                width="100"
+                height="100"
+                xlink:href="data:image/png;base64,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" />
+            </defs>
+          </svg>
+        </div>
+        <div class="text_wrapper">
+          <h2 class="about_text">Locate Us</h2>
+          <p class="about_subtext">Riverside 25, San Diego, California</p>
+        </div>
+      </div>
+      <div class="about_item">
+        <div class="about_img">
+          <svg
+            width="49"
+            height="49"
+            viewBox="0 0 49 49"
+            fill="none"
+            xmlns="http://www.w3.org/2000/svg">
+            <g clip-path="url(#clip0_2_120)">
+              <path
+                d="M8.11702 9.80674C4.55447 13.792 2.56186 18.9245 2.50148 24.2582C2.36058 36.4554 12.3237 46.4588 24.5007 46.499C36.6778 46.5191 46.5 36.6567 46.5 24.4997C46.5 12.5239 36.9193 2.76214 25.0039 2.50049C24.9435 2.50049 24.863 2.50049 24.8026 2.54074C24.7423 2.56087 24.6819 2.60113 24.6416 2.64138C24.6014 2.68164 24.5611 2.74202 24.5209 2.8024C24.5007 2.86278 24.4806 2.92316 24.4806 3.00367V12.5843"
+                stroke="white"
+                stroke-width="3.5"
+                stroke-linecap="round"
+                stroke-linejoin="round" />
+              <path
+                d="M21.9244 27.0762L12.8671 14.1342C12.7262 13.9531 12.6859 13.7317 12.706 13.5103C12.7262 13.2889 12.8067 13.0876 12.9677 12.9266C13.1287 12.7656 13.33 12.6851 13.5514 12.6649C13.7527 12.6448 13.9741 12.7052 14.1552 12.826L27.0971 21.8833C27.8821 22.4469 28.4255 23.3123 28.5866 24.2785C28.7476 25.2446 28.5262 26.2308 27.9626 27.0359C27.399 27.841 26.5537 28.3845 25.5876 28.5656C24.6215 28.7467 23.6352 28.5253 22.8301 27.9819C22.488 27.7404 22.1659 27.4385 21.9244 27.0762Z"
+                fill="white" />
+            </g>
+            <defs>
+              <clipPath id="clip0_2_120">
+                <rect width="49" height="49" fill="white" />
+              </clipPath>
+            </defs>
+          </svg>
+        </div>
+        <div class="text_wrapper">
+          <h2 class="about_text">Open Hours</h2>
+          <p class="about_subtext">Mon To Fri 9:00 AM - 9:00 PM</p>
+        </div>
+      </div>
+      <div class="about_item">
+        <div class="about_img vector">
+          <img src="./img/Vector.png" alt="" />
+        </div>
+        <div class="text_wrapper">
+          <h2 class="about_text">Reservation</h2>
+          <p class="about_subtext">restaurantate@gmail.com</p>
+        </div>
+      </div>
+    </div>
+
+    <!-- Delicious block -->
+    <section class="delicious">
+      <div class="dilicious_img">
+        <img src="./img/delicious.png" alt="elicious" />
+      </div>
+      <div class="delicious_text-block">
+        <h2 class="delicious_text">The Delicious Story</h2>
+        <p class="delicious_subtext">
+          The people, food and the prime locations make the perfect place for
+          the friends & family to come together and have great time.
+        </p>
+        <div class="delicious_text-wrapper">
+          <div>
+            <h2 class="delicious_text">2018</h2>
+            <p class="delicious_subtext">
+              Plan for this restaurant to deliver healthy food.
+            </p>
+          </div>
+          <div>
+            <h2 class="delicious_text">2022</h2>
+            <p class="delicious_subtext">
+              Happily in the fourth year by fulfill the motto.
+            </p>
+          </div>
+        </div>
+        <p class="delicious_subtext">JOSEFINE</p>
+        <img src="./img/josefine.png" class="josefine_img" alt="josefine" />
+      </div>
+    </section>
+  </div>
+</main>
+
+    <!-- menu -->
+    <section class="menu">
+  <div class="container">
+    <div class="menu_wrapper">
+      <div class="menu_leftBlock">
+        <h2 class="menu_main">Menu</h2>
+        <h2 class="menu_text">Try Our Special dishes</h2>
+        <p class="menu_subtext">
+          Every time you perfectly dine with us, it should happy for great
+          inspired food in an environment designed with individual touches
+          unique to the local area.
+        </p>
+        <img src="./img/menu/menu.png" alt="menu" />
+
+        <a href="" class="menu_link">See all dishes</a>
+      </div>
+      <div class="menu_rightBlock">
+        <h2 class="menu_main">Starters</h2>
+        <!-- 1 -->
+        <div class="menu_dish">
+          <img class="dish_img" src="./img/menu/dish1.png" alt="dish" />
+          <div class="dish_wrapper">
+            <h2 class="dish_text">Raw Scallops from Erquy</h2>
+            <p class="dish_subtext">
+              Shuck the scallop to that used for oysters
+            </p>
+          </div>
+          <div class="dish_line"></div>
+          <div class="dish_text price">$40</div>
+        </div>
+        <!-- 2 -->
+        <div class="menu_dish">
+          <img class="dish_img" src="./img/menu/dish2.png" alt="dish" />
+          <div class="dish_wrapper">
+            <h2 class="dish_text">Spring Roll</h2>
+            <p class="dish_subtext">Add oil to a hot pan spring onion whites</p>
+          </div>
+          <div class="dish_line"></div>
+          <div class="dish_text price">$20</div>
+        </div>
+        <!-- 3 dish -->
+        <div class="menu_dish">
+          <img class="dish_img" src="./img/menu/dish3.png" alt="dish" />
+          <div class="dish_wrapper">
+            <h2 class="dish_text">French Onion Soup</h2>
+            <p class="dish_subtext">Wheat flour, apple cider vinegar, bread</p>
+          </div>
+          <div class="dish_line"></div>
+          <div class="dish_text price">$25</div>
+        </div>
+        <!-- 4 dish -->
+        <div class="menu_dish">
+          <img class="dish_img" src="./img/menu/dish4.png" alt="dish" />
+          <div class="dish_wrapper">
+            <h2 class="dish_text">Tomato Bruschetta</h2>
+            <p class="dish_subtext">Bread, olive oil, garlic, black pepper</p>
+          </div>
+          <div class="dish_line"></div>
+          <div class="dish_text price">$30</div>
+        </div>
+        <!-- main dish -->
+        <h2 class="menu_main2">Main Dish</h2>
+        <!-- 5 dish -->
+        <div class="menu_dish">
+          <img class="dish_img" src="./img/menu/dish5.png" alt="dish" />
+          <div class="dish_wrapper">
+            <h2 class="dish_text">Grilled Salmon with Dill Sauce</h2>
+            <p class="dish_subtext">
+              Brown sugar, salmon fillet, Dijon mustard
+            </p>
+          </div>
+          <div class="dish_line"></div>
+          <div class="dish_text price">$40</div>
+        </div>
+        <!-- 6 dish -->
+        <div class="menu_dish">
+          <img class="dish_img" src="./img/menu/dish6.png" alt="dish" />
+          <div class="dish_wrapper">
+            <h2 class="dish_text">Roast Beef with Vegetable</h2>
+            <p class="dish_subtext">Green beans, rib eye, olive oil, beef</p>
+          </div>
+          <div class="dish_line"></div>
+          <div class="dish_text price">$20</div>
+        </div>
+        <!-- 7 dish -->
+        <div class="menu_dish">
+          <img class="dish_img" src="./img/menu/dish7.png" alt="dish" />
+          <div class="dish_wrapper">
+            <h2 class="dish_text">Marrkesh Vegetetarian Curruy</h2>
+            <p class="dish_subtext">Sweet potato, eggplant, garbanzo bean</p>
+          </div>
+          <div class="dish_line"></div>
+          <div class="dish_text price">$25</div>
+        </div>
+        <!-- 8 dish -->
+        <div class="menu_dish">
+          <img class="dish_img" src="./img/menu/dish8.png" alt="dish" />
+          <div class="dish_wrapper">
+            <h2 class="dish_text">Spicy Vegan Potato Curry</h2>
+            <p class="dish_subtext">
+              Coconut milk, beans, potatoes, curry powder
+            </p>
+          </div>
+          <div class="dish_line"></div>
+          <div class="dish_text price">$35</div>
+        </div>
+        <!-- deserts -->
+        <h2 class="menu_main2">Dessert</h2>
+        <!-- 9 dish -->
+        <div class="menu_dish">
+          <img class="dish_img" src="./img/menu/dish9.png" alt="dish" />
+          <div class="dish_wrapper">
+            <h2 class="dish_text">Apple Pie with Cream</h2>
+            <p class="dish_subtext">Whipping cream, egg white, cinnamon</p>
+          </div>
+          <div class="dish_line"></div>
+          <div class="dish_text price">$15</div>
+        </div>
+        <!-- 10 dish -->
+        <div class="menu_dish">
+          <img class="dish_img" src="./img/menu/dish10.png" alt="dish" />
+          <div class="dish_wrapper">
+            <h2 class="dish_text">Lemon Meringue Pie</h2>
+            <p class="dish_subtext">Frozen pie crust, meringue, lemon</p>
+          </div>
+          <div class="dish_line"></div>
+          <div class="dish_text price">$30</div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+
+    <!-- offer -->
+    <section class="offer">
+  <div class="container">
+    <div class="offer_wrapper">
+      <h2 class="offer_top">offer</h2>
+      <h2 class="offer_text">Our Offer dishes</h2>
+      <p class="offer_subtext">
+        Our chefs create melt-in-your-mouth dishes that'll satiate even the
+        fussiest eaters nows
+      </p>
+      <p class="offer_subtext">
+        the dishes are in offers use it based on hunger.
+      </p>
+    </div>
+
+    <!-- offer dishes -->
+    <div class="offer_dishes">
+      <div class="offer_dishItem">
+        <div class="dish_info">
+          <img src="./img/offer/price10.png" alt="" class="offer_price" />
+          <p class="offer_top">50% Offer Going</p>
+          <h2 class="offer_text">Chicken Burger</h2>
+          <p class="offer_subtext">
+            Chicken burger with the tasty toppings and leaves.
+          </p>
+        </div>
+        <img src="./img/offer/burger.png" alt="burger" class="offer_img" />
+      </div>
+      <div class="offer_dishItem2">
+        <div class="dish_info">
+          <img src="./img/offer/price9.png" alt="" class="offer_price" />
+          <p class="offer_top">50% Offer Going</p>
+          <h2 class="offer_text">Chicken Pizza</h2>
+          <p class="offer_subtext">
+            Chicken burger with the tasty toppings and leaves.
+          </p>
+        </div>
+        <img src="./img/offer/pizza.png" alt="burger" class="offer_img" />
+      </div>
+    </div>
+
+    <!--popular dishes  -->
+    <div class="popular_dishes">
+      <div class="offer_wrapper">
+        <h2 class="offer_top">menu</h2>
+        <h2 class="offer_text">Popular Dishes</h2>
+        <p class="offer_subtext">
+          There is a game between the waiters in restaurant to see who serves
+          the food to
+        </p>
+        <p class="offer_subtext">
+          each table fastest. That led to attempting the Guinness Record.
+        </p>
+      </div>
+      <!--popular dishes  -->
+      <div class="popular_wrapper">
+        <div class="popular_item">
+          <img
+            src="./img/offer/popular1.png"
+            alt="popular"
+            class="popular_img" />
+          <h2 class="popular_text">Chicken Manjoori $15</h2>
+          <p class="popular_subtext">
+            Dish relished by all age groups as a starter dish at parties.
+          </p>
+        </div>
+        <div class="popular_item">
+          <img
+            src="./img/offer/popular2.png"
+            alt="popular"
+            class="popular_img" />
+          <h2 class="popular_text">Hotdog $10</h2>
+          <p class="popular_subtext">
+            Grilled sausage served in the slit of a partially sliced bun.
+          </p>
+        </div>
+        <div class="popular_item">
+          <img
+            src="./img/offer/popular3.png"
+            alt="popular"
+            class="popular_img" />
+          <h2 class="popular_text">Fresh Salmon $5</h2>
+          <p class="popular_subtext">
+            Beat the health blues with our Super Immune Blue Juice Recipe.
+          </p>
+        </div>
+        <div class="popular_item">
+          <img
+            src="./img/offer/popular4.png"
+            alt="popular"
+            class="popular_img" />
+          <h2 class="popular_text">Veg Burger $10</h2>
+          <p class="popular_subtext">
+            Burgers may be made from ingredients like beans.
+          </p>
+        </div>
+      </div>
+      <a href="#!" class="menu_link">See all dishes</a>
+    </div>
+  </div>
+</section>
+
+    <!-- what we offer -->
+    <section class="what_offer">
+      <div class="container">
+        <div class="what_wrapper">
+          <div class="offer_wrapper">
+            <h2 class="offer_top">What we offer</h2>
+            <h2 class="offer_text">Our Great Services</h2>
+            <p class="offer_subtext">
+              The atmosphere set the stage. It’s about more than just a dining
+              room away from your home. food takes the spotlight as guests.
+            </p>
+          </div>
+
+          <div class="what_list">
+            <div class="what_item-block">
+              <img src="./img/offer/what1.png" alt="what img" />
+              <h2 class="what_text">Opened 24/7</h2>
+            </div>
+            <div class="what_item-block">
+              <img src="./img/offer/what2.png" alt="what img" />
+              <h2 class="what_text">Special Menus</h2>
+            </div>
+            <div class="what_item-block">
+              <img src="./img/offer/what3.png" alt="what img" />
+              <h2 class="what_text">Home Delivery</h2>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- blog -->
+    <section class="blog">
+  <div class="container">
+    <div class="offer_wrapper">
+      <h2 class="offer_top">Blog</h2>
+      <h2 class="offer_text">Be First Who Read News</h2>
+      <p class="offer_subtext">
+        Explore the latest stories about our dishes, offers, events and future
+        plans here.
+      </p>
+    </div>
+    <!-- blog wrapper -->
+
+    <div class="blog_wrapper">
+      <div class="blog_item">
+        <div class="blog_img">
+          <img src="./img/blog.png" alt="" class="blog_img" />
+          <a href="" class="blog_link">View More</a>
+        </div>
+        <div class="blog_info">
+          <h2 class="blog_top">Delicious</h2>
+          <h2 class="blog_top">March 19, 2022</h2>
+        </div>
+        <p class="blog_text">
+          The Legend of US Cuisine: The Story of Hungry People
+        </p>
+        <p class="blog_subtext">
+          Capitalize on low-hanging fruit to identify a ballpark value added
+          matrix economically and the creative activity to beta test override
+          the food quality.
+        </p>
+      </div>
+      <div class="blog_item">
+        <div class="blog_img">
+          <img src="./img/blog2.png" alt="" class="blog_img2" />
+          <a href="" class="blog_link">View More</a>
+        </div>
+        <div class="blog_info">
+          <h2 class="blog_top">Cooking</h2>
+          <h2 class="blog_top">March 19, 2022</h2>
+        </div>
+        <p class="blog_text">
+          The Most Popular Delicious Food of Mediterranean Cuisine
+        </p>
+        <p class="blog_subtext">
+          Strategies on low-hanging fruit to identify a ballpark value added
+          matrix economically and the creative activity to beta test override
+          the food quality.
+        </p>
+      </div>
+    </div>
+  </div>
+</section>
+
+    <!-- reservation -->
+    <section class="reservation">
+  <div class="container">
+    <form class="reservation_form">
+      <h2 class="form_title">reservation</h2>
+      <p class="form_subtitle">Book Your Table</p>
+      <div class="form_wrapper">
+        <input type="text" class="reserv_input" placeholder="Name" />
+        <input type="email" class="reserv_input" placeholder="Email" />
+        <input type="number" class="reserv_input2" placeholder="Persons" />
+        <input type="number" class="reserv_input3" placeholder="Timing" />
+        <input type="number" class="reserv_input3" placeholder="Date" />
+      </div>
+      <button type="submit" class="reserv_btn">Book A Table</button>
+    </form>
+  </div>
+</section>
+
+
+    <!-- footer -->
+    <footer class="footer">
+  <div class="container">
+    <div class="footer_top">
+      <h2 class="ftop_text">#TheTastEat</h2>
+      <img src="./img/IMAGE.png" alt="tastea" class="ftop_img" />
+      <img src="./img/inst.png" alt="inst" class="ftop_inst" />
+    </div>
+    <div class="footer_wrapper">
+      <div class="footer_item">
+        <h2 class="footer_contact">Contact</h2>
+        <p class="footer_subtext">
+          5 Rue Dalou, 75015 Paris <br />
+          <a href="tel:+123456789">+123 456 789</a> <br />
+          <span>josefin@mail.com</span>
+        </p>
+      </div>
+      <!--  -->
+      <div class="footer_item">
+        <h2 class="ftop_text fcenter">
+          Join our mailing list for updates,<br />
+          Get news & offers events.
+        </h2>
+        <label class="footer_input">
+          <input type="email" placeholder="email" name="email" class="finput" />
+          <button type="submit">Subscribe</button>
+        </label>
+      </div>
+      <!--  -->
+      <div class="footer_item">
+        <h2 class="footer_contact">Working Hours</h2>
+        <p class="footer_subtext">
+          <span>Mon – Fri:</span>
+          7.00am – 6.00pm <br />
+          <span>Sat:</span>
+          7.00am – 6.00pm <br />
+          <span>Sun:</span>
+          8.00am – 6.00pm
+        </p>
+      </div>
+    </div>
+    <div class="footer_bottom"></div>
+  </div>
+</footer>
+
+
+
+    <script src="./js/app.js"></script>
+  </body>
+</html>
